@@ -27,6 +27,11 @@ body {
   color: var(--fc-primary);
 }
 
+main {
+  display: grid;
+  gap: 3.2rem;
+}
+
 .page {
   max-width: 33rem;
   margin: 0 auto;
@@ -75,6 +80,7 @@ header p {
 .card img {
   height: 41.6rem;
   object-fit: cover;
+  border-radius: 6px;
 }
 
 .card h2 {
