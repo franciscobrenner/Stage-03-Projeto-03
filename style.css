@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-heading: 'Epilogue', sans-serif;
+  --ff-texting: 'Open sans', sans-serif;
+
+  --hue: 250;
+  --fc-primary: hsl(var(--hue), 100%, 100%);
+  --fc-secondary: hsl(var(--hue), 50%, 80%);
+  --bg-primary: hsl(var(--hue), 22%, 20%);
+
+  font-size: 62.5%;
+  --fs-body: 1.6rem;
+  --fs-header: 4rem;
+}
+
+body {
+  font-family: var(--ff-texting);
+  font-size: var(--fs-body);
+
+  background-color: var(--bg-primary);
+  color: var(--fc-primary);
+}
+
+.page {
+  max-width: 33rem;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+header {
+  margin: 10rem 0 8rem;
+  font-family: var(--ff-heading);
+  text-align: center;
+}
+
+p {
+  color: var(--fc-primary);
+}
+
+header h1 {
+  color: var(--fc-primary);
+  font-size: var(--fs-header);
+  font-weight: 800;
+  line-height: 4.8rem;
+}
+
+header p {
+  color: var(--fc-secondary);
+  text-transform: uppercase;
+  font-weight: 400;
+
+  font-size: var(--fs-body);
+  letter-spacing: 3px;
+  line-height: 3.2rem;
+
+  margin-bottom: 1.7rem;
+}
+
+.card img {
+  height: 41.6rem;
+  object-fit: cover;
+}
