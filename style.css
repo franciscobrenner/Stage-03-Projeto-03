@@ -65,7 +65,17 @@ header p {
   margin-bottom: 1.7rem;
 }
 
+.card {
+  position: relative;
+}
+
 .card img {
   height: 41.6rem;
   object-fit: cover;
+}
+
+.card h2 {
+  position: absolute;
+  bottom: 5.4rem;
+  left: 2.8rem;
 }
