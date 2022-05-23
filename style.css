@@ -11,6 +11,7 @@
   --hue: 250;
   --fc-primary: hsl(var(--hue), 100%, 100%);
   --fc-secondary: hsl(var(--hue), 50%, 80%);
+  --fc-secondary-dark: hsl(var(--hue), 100%, 11%);
   --bg-primary: hsl(var(--hue), 22%, 20%);
 
   font-size: 62.5%;
@@ -67,6 +68,8 @@ header p {
 
 .card {
   position: relative;
+
+  font-family: var(--ff-heading);
 }
 
 .card img {
@@ -75,7 +78,29 @@ header p {
 }
 
 .card h2 {
+  font-weight: 800;
   position: absolute;
   bottom: 5.4rem;
   left: 2.8rem;
+
+  font-size: var(--fs-header);
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card h2 span {
+  width: fit-content;
+
+  border-radius: 2rem;
+  background-color: var(--fc-primary);
+  font-size: var(--fs-body);
+  color: var(--fc-secondary-dark);
+  font-weight: 400;
+  padding: 0 1.6rem;
+  height: 3.8rem;
+
+  display: inline-flex;
+  align-items: center;
 }
